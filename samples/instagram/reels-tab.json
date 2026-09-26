@@ -1,0 +1,280 @@
+[
+  {
+    "dataType": "post",
+    "id": "3993300839542953931_13460080",
+    "pk": "3993300839542953931",
+    "code": "DdrDfTGOhfL",
+    "url": "https://www.instagram.com/reel/DdrDfTGOhfL/",
+    "createdAt": "2026-09-24T14:03:33.000Z",
+    "caption": "*Just a hooper who likes her breakfast balanced and her defenses scrambled.",
+    "hashtags": [],
+    "mentions": [],
+    "likeCount": 46,
+    "commentCount": 4,
+    "mediaType": "video",
+    "productType": "clips",
+    "isVideo": true,
+    "isCarousel": false,
+    "isPinned": false,
+    "isPaidPartnership": false,
+    "isLikeAndViewCountsDisabled": false,
+    "commentsDisabled": false,
+    "owner": {
+      "id": "13460080",
+      "username": "nike",
+      "fullName": "Nike",
+      "profilePicUrl": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+      "isVerified": true,
+      "isPrivate": false,
+      "followerCount": 291092956,
+      "followingCount": 266,
+      "postCount": null,
+      "biography": "Just Do It.",
+      "externalUrl": "http://empli.fi/nike"
+    },
+    "coowners": [],
+    "taggedUsers": [],
+    "location": null,
+    "audio": {
+      "id": "28241187812241220",
+      "title": "Original audio",
+      "artist": "nike",
+      "isOriginal": true
+    },
+    "image": {
+      "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+      "width": 1076,
+      "height": 1910
+    },
+    "video": {
+      "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+      "duration": 15.015,
+      "playCount": 4088,
+      "width": 1080,
+      "height": 1920
+    },
+    "carousel": [],
+    "carouselCount": null,
+    "accessibilityCaption": null,
+    "sponsors": [],
+    "topics": [],
+    "captionIsEdited": false,
+    "engagementRate": 0,
+    "source": {
+      "type": "reels",
+      "input": "https://www.instagram.com/nike/reels/"
+    }
+  },
+  {
+    "dataType": "post",
+    "id": "3991849403537918302_13460080",
+    "pk": "3991849403537918302",
+    "code": "Ddl5eH-u4le",
+    "url": "https://www.instagram.com/reel/Ddl5eH-u4le/",
+    "createdAt": "2026-09-22T14:00:04.000Z",
+    "caption": "*Just a normal day for @caitlinclark22.\n\nWake up. Eat cereal. Lace up the Caitlin 1. Sell out arenas. Repeat.",
+    "hashtags": [],
+    "mentions": [
+      "caitlinclark22"
+    ],
+    "likeCount": 64362,
+    "commentCount": 940,
+    "mediaType": "video",
+    "productType": "clips",
+    "isVideo": true,
+    "isCarousel": false,
+    "isPinned": false,
+    "isPaidPartnership": false,
+    "isLikeAndViewCountsDisabled": false,
+    "commentsDisabled": false,
+    "owner": {
+      "id": "13460080",
+      "username": "nike",
+      "fullName": "Nike",
+      "profilePicUrl": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+      "isVerified": true,
+      "isPrivate": false,
+      "followerCount": 291092956,
+      "followingCount": 266,
+      "postCount": null,
+      "biography": "Just Do It.",
+      "externalUrl": "http://empli.fi/nike"
+    },
+    "coowners": [
+      {
+        "id": "306787899",
+        "username": "nikebasketball",
+        "fullName": "Nike Basketball",
+        "profilePicUrl": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "isVerified": true,
+        "isPrivate": null
+      }
+    ],
+    "taggedUsers": [
+      {
+        "id": "306787899",
+        "username": "nikebasketball",
+        "fullName": "Nike Basketball",
+        "profilePicUrl": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "isVerified": true,
+        "isPrivate": null
+      },
+      {
+        "id": "1466972266",
+        "username": "caitlinclark22",
+        "fullName": "Caitlin Clark",
+        "profilePicUrl": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "isVerified": true,
+        "isPrivate": null
+      },
+      {
+        "id": "5498065481",
+        "username": "nickofferman",
+        "fullName": "Nick Offerman",
+        "profilePicUrl": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "isVerified": true,
+        "isPrivate": null
+      }
+    ],
+    "location": null,
+    "audio": {
+      "id": "39281228001468229",
+      "title": "Original audio",
+      "artist": "nike",
+      "isOriginal": true
+    },
+    "image": {
+      "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+      "width": 1080,
+      "height": 1920
+    },
+    "video": {
+      "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+      "duration": 30.03,
+      "playCount": 2096789,
+      "width": 1080,
+      "height": 1920
+    },
+    "carousel": [],
+    "carouselCount": null,
+    "accessibilityCaption": null,
+    "sponsors": [],
+    "topics": [],
+    "captionIsEdited": false,
+    "engagementRate": 0.0224,
+    "source": {
+      "type": "reels",
+      "input": "https://www.instagram.com/nike/reels/"
+    }
+  },
+  {
+    "dataType": "post",
+    "id": "3975901976486041392_13460080",
+    "pk": "3975901976486041392",
+    "code": "DctPchKOVcw",
+    "url": "https://www.instagram.com/reel/DctPchKOVcw/",
+    "createdAt": "2026-08-31T13:56:44.000Z",
+    "caption": "If you’re going to play, play with fire.\n\n@carlitosalcarazz is back and coming in hot.",
+    "hashtags": [],
+    "mentions": [
+      "carlitosalcarazz"
+    ],
+    "likeCount": 366664,
+    "commentCount": 6004,
+    "mediaType": "video",
+    "productType": "clips",
+    "isVideo": true,
+    "isCarousel": false,
+    "isPinned": false,
+    "isPaidPartnership": false,
+    "isLikeAndViewCountsDisabled": false,
+    "commentsDisabled": false,
+    "owner": {
+      "id": "13460080",
+      "username": "nike",
+      "fullName": "Nike",
+      "profilePicUrl": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+      "isVerified": true,
+      "isPrivate": false,
+      "followerCount": 291092956,
+      "followingCount": 266,
+      "postCount": null,
+      "biography": "Just Do It.",
+      "externalUrl": "http://empli.fi/nike"
+    },
+    "coowners": [
+      {
+        "id": "18900337",
+        "username": "travisscott",
+        "fullName": "flame",
+        "profilePicUrl": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "isVerified": true,
+        "isPrivate": null
+      },
+      {
+        "id": "3227641356",
+        "username": "carlitosalcarazz",
+        "fullName": "Carlos Alcaraz Garfia",
+        "profilePicUrl": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "isVerified": true,
+        "isPrivate": null
+      }
+    ],
+    "taggedUsers": [
+      {
+        "id": "18900337",
+        "username": "travisscott",
+        "fullName": "flame",
+        "profilePicUrl": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "isVerified": true,
+        "isPrivate": null
+      },
+      {
+        "id": "3227641356",
+        "username": "carlitosalcarazz",
+        "fullName": "Carlos Alcaraz Garfia",
+        "profilePicUrl": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "isVerified": true,
+        "isPrivate": null
+      },
+      {
+        "id": "9158729974",
+        "username": "cactusjack",
+        "fullName": "Cactus Jack",
+        "profilePicUrl": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "isVerified": true,
+        "isPrivate": null
+      }
+    ],
+    "location": null,
+    "audio": {
+      "id": "26062637426767083",
+      "title": "Original audio",
+      "artist": "nike",
+      "isOriginal": true
+    },
+    "image": {
+      "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+      "width": 1080,
+      "height": 1920
+    },
+    "video": {
+      "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+      "duration": 37.162,
+      "playCount": 9680832,
+      "width": 1080,
+      "height": 1920
+    },
+    "carousel": [],
+    "carouselCount": null,
+    "accessibilityCaption": null,
+    "sponsors": [],
+    "topics": [],
+    "captionIsEdited": false,
+    "engagementRate": 0.128,
+    "source": {
+      "type": "reels",
+      "input": "https://www.instagram.com/nike/reels/"
+    }
+  }
+]

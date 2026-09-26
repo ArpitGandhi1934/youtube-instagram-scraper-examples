@@ -1,0 +1,18 @@
+{
+  "name": "youtube-instagram-scraper-examples",
+  "version": "1.0.0",
+  "description": "Node.js, Python, curl, Apify CLI and Google Sheets examples for the yugenox/youtube-scraper and yugenox/instagram-scraper Apify Actors.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.6"
+  },
+  "scripts": {
+    "youtube": "node --env-file=.env node/run.mjs youtube",
+    "instagram": "node --env-file=.env node/run.mjs instagram"
+  },
+  "dependencies": {
+    "apify-client": "^2.25.0"
+  }
+}

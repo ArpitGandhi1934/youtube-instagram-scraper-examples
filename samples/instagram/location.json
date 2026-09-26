@@ -1,0 +1,305 @@
+[
+  {
+    "dataType": "post",
+    "id": null,
+    "pk": null,
+    "code": "REDACTED",
+    "url": "https://www.instagram.com/p/REDACTED/",
+    "createdAt": "2026-09-26T11:50:54.000Z",
+    "caption": "High atop The Fernsehturm , the highest point in Berlin and best view of the city!!!",
+    "hashtags": [],
+    "mentions": [],
+    "likeCount": 1,
+    "commentCount": 1,
+    "mediaType": "carousel",
+    "productType": "carousel_container",
+    "isVideo": false,
+    "isCarousel": true,
+    "isPinned": false,
+    "isPaidPartnership": false,
+    "isLikeAndViewCountsDisabled": false,
+    "commentsDisabled": false,
+    "owner": {
+      "id": null,
+      "username": "user_1",
+      "fullName": null,
+      "profilePicUrl": null,
+      "isVerified": false,
+      "isPrivate": false,
+      "followerCount": 177,
+      "followingCount": 491,
+      "postCount": null,
+      "biography": null,
+      "externalUrl": null
+    },
+    "coowners": [],
+    "taggedUsers": [],
+    "location": {
+      "id": "111175118906315",
+      "name": "Berlin, Germany",
+      "slug": "berlin-germany",
+      "address": null,
+      "city": null,
+      "lat": 52.518391,
+      "lng": 13.401251
+    },
+    "audio": null,
+    "image": {
+      "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+      "width": 1080,
+      "height": 1350
+    },
+    "video": null,
+    "carousel": [
+      {
+        "id": "3994683050412991005",
+        "type": "image",
+        "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "videoUrl": null,
+        "width": 1080,
+        "height": 1350
+      },
+      {
+        "id": "3994683051252163902",
+        "type": "image",
+        "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "videoUrl": null,
+        "width": 1080,
+        "height": 1350
+      },
+      {
+        "id": "3994683050681847871",
+        "type": "image",
+        "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "videoUrl": null,
+        "width": 1080,
+        "height": 1350
+      },
+      {
+        "id": "3994683050883177720",
+        "type": "image",
+        "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "videoUrl": null,
+        "width": 1080,
+        "height": 1350
+      },
+      {
+        "id": "3994683050714936595",
+        "type": "image",
+        "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "videoUrl": null,
+        "width": 1080,
+        "height": 1350
+      }
+    ],
+    "carouselCount": 5,
+    "accessibilityCaption": null,
+    "sponsors": [],
+    "topics": [],
+    "captionIsEdited": false,
+    "engagementRate": 1.1299,
+    "source": {
+      "type": "location",
+      "input": "https://www.instagram.com/explore/locations/213131048/"
+    }
+  },
+  {
+    "dataType": "post",
+    "id": null,
+    "pk": null,
+    "code": "REDACTED",
+    "url": "https://www.instagram.com/p/REDACTED/",
+    "createdAt": "2026-09-26T12:42:09.000Z",
+    "caption": "Eine hübsche Anfertigung mit einer etwas anderen Fassung ✨️💎 und wer sagt ein Ring muss immer geradlinig sein? Harmonisch abgestimmt und ein Unikat ~\n\n#berlinergoldschmiede #goldschmiedeberlin #goldschmied #diamondring #goldring",
+    "hashtags": [
+      "berlinergoldschmiede",
+      "goldschmiedeberlin",
+      "goldschmied",
+      "diamondring",
+      "goldring"
+    ],
+    "mentions": [],
+    "likeCount": 1,
+    "commentCount": 0,
+    "mediaType": "carousel",
+    "productType": "carousel_container",
+    "isVideo": false,
+    "isCarousel": true,
+    "isPinned": false,
+    "isPaidPartnership": false,
+    "isLikeAndViewCountsDisabled": true,
+    "commentsDisabled": false,
+    "owner": {
+      "id": null,
+      "username": "user_3",
+      "fullName": null,
+      "profilePicUrl": null,
+      "isVerified": false,
+      "isPrivate": false,
+      "followerCount": 994,
+      "followingCount": 250,
+      "postCount": null,
+      "biography": null,
+      "externalUrl": null
+    },
+    "coowners": [],
+    "taggedUsers": [
+      {
+        "id": null,
+        "username": "user_3",
+        "fullName": null,
+        "profilePicUrl": null,
+        "isVerified": false,
+        "isPrivate": null
+      }
+    ],
+    "location": {
+      "id": "111175118906315",
+      "name": "Berlin, Germany",
+      "slug": "berlin-germany",
+      "address": null,
+      "city": null,
+      "lat": 52.518391,
+      "lng": 13.401251
+    },
+    "audio": null,
+    "image": {
+      "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+      "width": 1440,
+      "height": 1440
+    },
+    "video": null,
+    "carousel": [
+      {
+        "id": "3994706389920113724",
+        "type": "image",
+        "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "videoUrl": null,
+        "width": 1440,
+        "height": 1440
+      },
+      {
+        "id": "3994706393350863669",
+        "type": "image",
+        "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "videoUrl": null,
+        "width": 1440,
+        "height": 1440
+      },
+      {
+        "id": "3994706397788374014",
+        "type": "image",
+        "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "videoUrl": null,
+        "width": 1440,
+        "height": 1440
+      },
+      {
+        "id": "3994706401513098253",
+        "type": "image",
+        "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "videoUrl": null,
+        "width": 1440,
+        "height": 1440
+      }
+    ],
+    "carouselCount": 4,
+    "accessibilityCaption": null,
+    "sponsors": [],
+    "topics": [],
+    "captionIsEdited": false,
+    "engagementRate": 0.1006,
+    "source": {
+      "type": "location",
+      "input": "https://www.instagram.com/explore/locations/213131048/"
+    }
+  },
+  {
+    "dataType": "post",
+    "id": null,
+    "pk": null,
+    "code": "REDACTED",
+    "url": "https://www.instagram.com/p/REDACTED/",
+    "createdAt": "2026-09-26T12:05:41.000Z",
+    "caption": "Es la figura del “Ampelmann”, un personaje muy famoso de Alemania es el hombrecito de los semáforos",
+    "hashtags": [],
+    "mentions": [],
+    "likeCount": 0,
+    "commentCount": 0,
+    "mediaType": "carousel",
+    "productType": "carousel_container",
+    "isVideo": false,
+    "isCarousel": true,
+    "isPinned": false,
+    "isPaidPartnership": false,
+    "isLikeAndViewCountsDisabled": false,
+    "commentsDisabled": false,
+    "owner": {
+      "id": null,
+      "username": "user_2",
+      "fullName": null,
+      "profilePicUrl": null,
+      "isVerified": false,
+      "isPrivate": false,
+      "followerCount": 666,
+      "followingCount": 172,
+      "postCount": null,
+      "biography": null,
+      "externalUrl": null
+    },
+    "coowners": [],
+    "taggedUsers": [],
+    "location": {
+      "id": "111175118906315",
+      "name": "Berlin, Germany",
+      "slug": "berlin-germany",
+      "address": null,
+      "city": null,
+      "lat": 52.518391,
+      "lng": 13.401251
+    },
+    "audio": null,
+    "image": {
+      "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+      "width": 1536,
+      "height": 1920
+    },
+    "video": null,
+    "carousel": [
+      {
+        "id": "3994691345612435164",
+        "type": "image",
+        "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "videoUrl": null,
+        "width": 1536,
+        "height": 1920
+      },
+      {
+        "id": "3994691345109108168",
+        "type": "image",
+        "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "videoUrl": null,
+        "width": 1536,
+        "height": 1920
+      },
+      {
+        "id": "3994691345604058267",
+        "type": "image",
+        "url": "https://cdninstagram.com/(signed media URL, expires after a few days)",
+        "videoUrl": null,
+        "width": 1536,
+        "height": 1920
+      }
+    ],
+    "carouselCount": 3,
+    "accessibilityCaption": null,
+    "sponsors": [],
+    "topics": [],
+    "captionIsEdited": false,
+    "engagementRate": 0,
+    "source": {
+      "type": "location",
+      "input": "https://www.instagram.com/explore/locations/213131048/"
+    }
+  }
+]

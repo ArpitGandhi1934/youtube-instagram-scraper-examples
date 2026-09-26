@@ -1,0 +1,107 @@
+[
+  {
+    "dataType": "comment",
+    "id": null,
+    "text": "😊✈️⭐",
+    "createdAt": "2026-09-26T09:36:07.000Z",
+    "likeCount": 0,
+    "replyCount": null,
+    "owner": {
+      "id": null,
+      "username": "user_2",
+      "isVerified": false,
+      "profilePicUrl": null
+    },
+    "postId": "3985597917972217774",
+    "postCode": "DdPsDCWRT-u",
+    "postUrl": "https://www.instagram.com/reel/DdPsDCWRT-u/",
+    "source": {
+      "type": "post",
+      "input": "https://www.instagram.com/p/DdPsDCWRT-u/"
+    }
+  },
+  {
+    "dataType": "comment",
+    "id": null,
+    "text": "YASSS!!!! Made my day to know my bro Chris Condon was flying one of those!!!!! 🫡❤️🚀",
+    "createdAt": "2026-09-26T01:42:33.000Z",
+    "likeCount": 0,
+    "replyCount": null,
+    "owner": {
+      "id": null,
+      "username": "user_4",
+      "isVerified": false,
+      "profilePicUrl": null
+    },
+    "postId": "3985597917972217774",
+    "postCode": "DdPsDCWRT-u",
+    "postUrl": "https://www.instagram.com/reel/DdPsDCWRT-u/",
+    "source": {
+      "type": "post",
+      "input": "https://www.instagram.com/p/DdPsDCWRT-u/"
+    }
+  },
+  {
+    "dataType": "comment",
+    "id": null,
+    "text": "❤️",
+    "createdAt": "2026-09-25T12:03:49.000Z",
+    "likeCount": 0,
+    "replyCount": null,
+    "owner": {
+      "id": null,
+      "username": "user_1",
+      "isVerified": false,
+      "profilePicUrl": null
+    },
+    "postId": "3985597917972217774",
+    "postCode": "DdPsDCWRT-u",
+    "postUrl": "https://www.instagram.com/reel/DdPsDCWRT-u/",
+    "source": {
+      "type": "post",
+      "input": "https://www.instagram.com/p/DdPsDCWRT-u/"
+    }
+  },
+  {
+    "dataType": "comment",
+    "id": null,
+    "text": "",
+    "createdAt": "2026-09-24T17:53:35.000Z",
+    "likeCount": 0,
+    "replyCount": null,
+    "owner": {
+      "id": null,
+      "username": "user_3",
+      "isVerified": false,
+      "profilePicUrl": null
+    },
+    "postId": "3985597917972217774",
+    "postCode": "DdPsDCWRT-u",
+    "postUrl": "https://www.instagram.com/reel/DdPsDCWRT-u/",
+    "source": {
+      "type": "post",
+      "input": "https://www.instagram.com/p/DdPsDCWRT-u/"
+    }
+  },
+  {
+    "dataType": "comment",
+    "id": null,
+    "text": "",
+    "createdAt": "2026-09-24T17:53:34.000Z",
+    "likeCount": 0,
+    "replyCount": null,
+    "owner": {
+      "id": null,
+      "username": "user_3",
+      "isVerified": false,
+      "profilePicUrl": null
+    },
+    "postId": "3985597917972217774",
+    "postCode": "DdPsDCWRT-u",
+    "postUrl": "https://www.instagram.com/reel/DdPsDCWRT-u/",
+    "source": {
+      "type": "post",
+      "input": "https://www.instagram.com/p/DdPsDCWRT-u/"
+    }
+  }
+]
