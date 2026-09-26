@@ -245,6 +245,8 @@ Pay per result, no subscription. Prices checked on 2026-09-26 from the Apify Sto
 | 1,000 Instagram posts | **$1.90** | apify/instagram-scraper: $2.70 |
 | One 30-second Instagram reel with transcript | **$0.0059** | apify/instagram-reel-scraper: $0.0506 ($0.0026 + $0.048 per transcript minute) |
 
+For plain video metadata at volume, apidojo/youtube-scraper is $0.50 per 1,000 (10-video minimum per query, no single-video URLs, no comments or dislikes). For short reel transcripts, apple_yang/instagram-transcripts-scraper is $0.0055 per 30-second reel, slightly below ours; we're slightly lower from two started minutes up. Full dated comparisons: [YouTube scrapers compared](https://yugenox-data.vercel.app/compare/youtube-scrapers) and [reel transcript tools compared](https://yugenox-data.vercel.app/compare/instagram-reel-transcript-tools).
+
 The Instagram price includes latest comments, AI summaries and view counts in the row; transcripts are $0.004 per started minute of audio. Plain post rows without those extras are available for less elsewhere on the Store. Apify's free plan includes monthly credit you can spend on either Actor (Instagram free-plan runs are currently limited to 10 results each).
 
 ## Why this instead of the YouTube Data API or the Instagram Graph API
