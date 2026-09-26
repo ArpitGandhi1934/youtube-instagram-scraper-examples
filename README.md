@@ -276,7 +276,7 @@ With the Actors you need one Apify token, and you pay per result.
 
 - YouTube dislike counts in bulk to CSV: [youtube-dislike-count-bulk](https://github.com/ArpitGandhi1934/youtube-dislike-count-bulk)
 - Instagram Reels to text in bulk: [instagram-reels-transcript-bulk](https://github.com/ArpitGandhi1934/instagram-reels-transcript-bulk)
-- Guides, pricing math and use cases: [yugenox-data.vercel.app](https://yugenox-data.vercel.app)
+- Guides on [yugenox-data.vercel.app](https://yugenox-data.vercel.app): [YouTube Data API alternative](https://yugenox-data.vercel.app/youtube/data-api-alternative), [YouTube comments](https://yugenox-data.vercel.app/youtube/comments-scraper), [channel videos to CSV](https://yugenox-data.vercel.app/youtube/channel-videos-to-csv), [Instagram without login](https://yugenox-data.vercel.app/instagram/scraper-no-login), [influencer vetting](https://yugenox-data.vercel.app/instagram/influencer-vetting), [location posts](https://yugenox-data.vercel.app/instagram/location-posts), [reels by audio](https://yugenox-data.vercel.app/instagram/reels-by-audio), [use in ChatGPT, Claude and Cursor](https://yugenox-data.vercel.app/ai/use-in-chatgpt-claude-cursor), [pricing calculator](https://yugenox-data.vercel.app/pricing-calculator)
 - The Actors, with input forms, output schemas, reviews and their API pages (clients, OpenAPI, MCP for AI agents): [YouTube Scraper][store-yt] ([API][api-yt]) and [Instagram Scraper][store-ig] ([API][api-ig])
 
 ## Samples, testing and legal
