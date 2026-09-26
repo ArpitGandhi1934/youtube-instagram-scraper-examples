@@ -5,8 +5,8 @@
 Working **YouTube and Instagram scraper examples** for every input mode of two Apify Actors: the [YouTube Scraper][store-yt] (search, channels, playlists, video URLs, comments, date and sort filters, Shorts, estimated dislikes) and the [Instagram Scraper][store-ig] (profiles, reels, hashtags, keywords, locations, audio, posts, comments, profile details, lookalike accounts). Each example is a small JSON input you can run from Python, Node.js, curl, the Apify CLI or Google Sheets, with real sample output next to it. Both Actors read public data without a YouTube API key or an Instagram login.
 
 - [Setup](#setup)
-- [YouTube examples](#youtube-examples): [search](#youtube-search), [channel](#youtube-channel-videos), [video URLs + dislikes](#youtube-video-urls-and-dislikes), [playlist](#youtube-playlist), [comments](#youtube-comments), [date and sort filters](#youtube-date-and-sort-filters), [Shorts](#youtube-shorts)
-- [Instagram examples](#instagram-examples): [profile](#instagram-profile-posts), [reels](#instagram-reels-tab), [hashtag](#instagram-hashtag), [keyword](#instagram-keyword-search), [location](#instagram-location-posts), [audio](#instagram-reels-by-audio), [post URL](#instagram-post-url-with-add-ons), [comments](#instagram-comments), [profile details](#instagram-profile-details-and-related-accounts), [lookalike + business filters](#instagram-lookalike-accounts-with-business-filters)
+- [YouTube examples](#youtube-examples): [search](#youtube-search), [channel](#youtube-channel-videos), [video URLs + dislikes](#youtube-video-urls-and-dislikes), [playlist](#youtube-playlist), [comments](#youtube-comments), [date and sort filters](#youtube-date-and-sort-filters), [Shorts](#youtube-shorts-scraper)
+- [Instagram examples](#instagram-examples): [profile](#instagram-profile-posts), [reels](#instagram-reels-scraper-reels-tab), [hashtag](#instagram-hashtag), [keyword](#instagram-keyword-search), [location](#instagram-location-posts), [audio](#instagram-reels-by-audio), [post URL](#instagram-post-url-with-add-ons), [comments](#instagram-comments), [profile details](#instagram-profile-details-and-related-accounts), [lookalike + business filters](#instagram-lookalike-accounts-with-business-filters)
 - [Google Sheets](#google-sheets) · [Price](#price) · [Why not the official APIs](#why-this-instead-of-the-youtube-data-api-or-the-instagram-graph-api) · [Limits](#limits)
 
 ## Setup
@@ -115,7 +115,7 @@ A channel name, `@handle` or channel URL all work. Returns the newest videos fir
 
 `dateFilter`: `any`, `hour`, `today`, `week`, `month`, `year`. `sortBy`: `relevance`, `date`, `views`, `rating`. Both apply to search terms only, not to channel, playlist or video URLs. Rows are written as they finish, so sort the dataset yourself if order matters.
 
-### YouTube Shorts
+### YouTube Shorts scraper
 
 [`inputs/youtube/shorts.json`](inputs/youtube/shorts.json) · [sample](samples/youtube/shorts.json)
 
@@ -139,7 +139,7 @@ Actor: `yugenox/instagram-scraper`. Posts mode returns one row per post or reel 
 
 A profile URL, bare handle or numeric user ID. Posts come newest first. `until` takes a date (`2026-09-01`) or a period (`7 days`, `3 months`) and stops reading the profile at the first older post, so you don't pay for it.
 
-### Instagram reels tab
+### Instagram Reels scraper (reels tab)
 
 [`inputs/instagram/reels-tab.json`](inputs/instagram/reels-tab.json) · [sample](samples/instagram/reels-tab.json)
 
@@ -276,7 +276,7 @@ With the Actors you need one Apify token, and you pay per result.
 
 - YouTube dislike counts in bulk to CSV: [youtube-dislike-count-bulk](https://github.com/ArpitGandhi1934/youtube-dislike-count-bulk)
 - Instagram Reels to text in bulk: [instagram-reels-transcript-bulk](https://github.com/ArpitGandhi1934/instagram-reels-transcript-bulk)
-- Guides on [yugenox-data.vercel.app](https://yugenox-data.vercel.app): [YouTube Data API alternative](https://yugenox-data.vercel.app/youtube/data-api-alternative), [YouTube comments](https://yugenox-data.vercel.app/youtube/comments-scraper), [channel videos to CSV](https://yugenox-data.vercel.app/youtube/channel-videos-to-csv), [Instagram without login](https://yugenox-data.vercel.app/instagram/scraper-no-login), [influencer vetting](https://yugenox-data.vercel.app/instagram/influencer-vetting), [location posts](https://yugenox-data.vercel.app/instagram/location-posts), [reels by audio](https://yugenox-data.vercel.app/instagram/reels-by-audio), [use in ChatGPT, Claude and Cursor](https://yugenox-data.vercel.app/ai/use-in-chatgpt-claude-cursor), [pricing calculator](https://yugenox-data.vercel.app/pricing-calculator)
+- Guides on [yugenox-data.vercel.app](https://yugenox-data.vercel.app): [YouTube Data API alternative](https://yugenox-data.vercel.app/youtube/data-api-alternative), [YouTube scrapers compared](https://yugenox-data.vercel.app/compare/youtube-scrapers), [YouTube comments](https://yugenox-data.vercel.app/youtube/comments-scraper), [channel videos to CSV](https://yugenox-data.vercel.app/youtube/channel-videos-to-csv), [Instagram without login](https://yugenox-data.vercel.app/instagram/scraper-no-login), [influencer vetting](https://yugenox-data.vercel.app/instagram/influencer-vetting), [location posts](https://yugenox-data.vercel.app/instagram/location-posts), [reels by audio](https://yugenox-data.vercel.app/instagram/reels-by-audio), [use in ChatGPT, Claude and Cursor](https://yugenox-data.vercel.app/ai/use-in-chatgpt-claude-cursor), [pricing calculator](https://yugenox-data.vercel.app/pricing-calculator)
 - The Actors, with input forms, output schemas, reviews and their API pages (clients, OpenAPI, MCP for AI agents): [YouTube Scraper][store-yt] ([API][api-yt]) and [Instagram Scraper][store-ig] ([API][api-ig])
 
 ## Samples, testing and legal
