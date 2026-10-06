@@ -125,6 +125,14 @@ A channel name, `@handle` or channel URL all work. Returns the newest videos fir
 
 Shorts are off by default. With `includeShorts`, search results also include Shorts, flagged `isShort: true` with a `shortsUrl`. `maxShorts` and `maxStreams` cap Shorts and live streams per search term (`0` excludes them). YouTube doesn't return the Shorts shelf when a date filter or non-default sort is set, and `duration` is empty on Shorts.
 
+If you only need Shorts, the dedicated [YouTube Shorts Scraper][store-shorts] (`yugenox/youtube-shorts-scraper`) costs less per Short: $1.30 per 1,000 on the Apify Free and Starter plans (down to $1.00 on Business), plus $0.001 per run and $0.0003 per channel, search or URL checked, against $2.00 per 1,000 rows here. It reads a channel's Shorts tab (newest, most popular or oldest first), YouTube's Shorts-only search and Shorts URLs, has a newer-than date filter, and adds the song a Short uses when YouTube lists one. It reads public details only: no video files, captions or comment text.
+
+```json
+{ "channels": ["@NASA"], "channelSortBy": "popular", "maxResults": 20 }
+```
+
+Run it with the Python or JavaScript snippet at the top by changing the Actor name to `yugenox/youtube-shorts-scraper`; the runners in this repo take `youtube` or `instagram` only.
+
 ## Instagram examples
 
 Actor: `yugenox/instagram-scraper`. Posts mode returns one row per post or reel with caption, likes, comments, plays, owner with follower count, co-authors, tagged users, location, audio and media URLs.
@@ -207,7 +215,9 @@ Reels that use a given sound. The id is in the audio page URL.
 { "startUrls": ["https://www.instagram.com/p/DdPsDCWRT-u/"], "resultsType": "comments", "maxComments": 5, "maxItems": 5 }
 ```
 
-One row per comment (text, author, likes, date), newest first. Replies to comments are only visible to logged-in accounts, so they are not included.
+One row per comment (text, author, likes, date), newest first by default; `"commentsSort": "top"` returns the most-liked first. Replies to comments are only visible to logged-in accounts, so they are not included.
+
+For comments only, the [Instagram Comments Scraper][store-igc] (`yugenox/instagram-comments-scraper`) takes post URLs with like, keyword and date filters that run before billing; [instagram-comments-export](https://github.com/ArpitGandhi1934/instagram-comments-export) wraps it in Python and Node scripts that write Excel, CSV or JSONL.
 
 ### Instagram profile details and related accounts
 
@@ -235,19 +245,21 @@ One row per profile: bio, bio links, followers, following, reels count, category
 
 ## Price
 
-Pay per result, no subscription. Prices checked on 2026-09-26 from the Apify Store (Apify Free plan prices):
+Pay per result, no subscription. Prices checked on 2026-10-06 from the Apify API (Apify Free plan prices):
 
 | Job | yugenox Actors | Alternative on Apify |
 |---|---|---|
 | 1,000 YouTube videos | **$2.00** | streamers/youtube-scraper: $4.00 |
 | 100 YouTube videos with 20 comments each | **$0.20** (comments ride inside the video row) | $4.40 (streamers/youtube-scraper $0.40 + streamers/youtube-comments-scraper $2.00 per 1,000 comments × 2,000) |
+| 1,000 YouTube Shorts | **$1.30** with the [Shorts Scraper][store-shorts] (plus $0.001 per run and $0.0003 per channel or search); $2.00 here with `includeShorts` | streamers/youtube-shorts-scraper: $4.00 |
 | YouTube dislike estimates | included | not offered |
 | 1,000 Instagram posts | **$1.90** | apify/instagram-scraper: $2.70 |
+| 1,000 Instagram comments | **$1.90** with the [Comments Scraper][store-igc] or with `resultsType: "comments"` here | apify/instagram-comment-scraper: $2.60 |
 | One 30-second Instagram reel with transcript | **$0.0059** | apify/instagram-reel-scraper: $0.0506 ($0.0026 + $0.048 per transcript minute) |
 
-For plain video metadata at volume, apidojo/youtube-scraper is $0.50 per 1,000 (10-video minimum per query, no single-video URLs, no comments or dislikes). For short reel transcripts, apple_yang/instagram-transcripts-scraper is $0.0055 per 30-second reel, slightly below ours; we're slightly lower from two started minutes up. Full dated comparisons: [YouTube scrapers compared](https://yugenox-data.vercel.app/compare/youtube-scrapers) and [reel transcript tools compared](https://yugenox-data.vercel.app/compare/instagram-reel-transcript-tools).
+For plain video metadata at volume, apidojo/youtube-scraper is $0.50 per 1,000 (10-video minimum per query, no single-video URLs, no comments or dislikes). For short reel transcripts, apple_yang/instagram-transcripts-scraper is $0.0055 per 30-second reel, slightly below ours; we're slightly lower from two started minutes up. For Instagram comments, apidojo/instagram-comments-scraper is $0.50 per 1,000, below ours. Full dated comparisons: [YouTube scrapers compared](https://yugenox-data.vercel.app/compare/youtube-scrapers) and [reel transcript tools compared](https://yugenox-data.vercel.app/compare/instagram-reel-transcript-tools).
 
-The Instagram price includes latest comments, AI summaries and view counts in the row; transcripts are $0.004 per started minute of audio. Plain post rows without those extras are available for less elsewhere on the Store. Apify's free plan includes monthly credit you can spend on either Actor (Instagram free-plan runs are currently limited to 10 results each).
+The Instagram price includes latest comments, AI summaries and view counts in the row; transcripts are $0.004 per started minute of audio. Plain post rows without those extras are available for less elsewhere on the Store. Instagram row and comment prices drop on bigger Apify plans: $1.50 per 1,000 on Scale and $1.10 on Business (the YouTube Scraper costs the same on every plan). Apify's free plan includes monthly credit you can spend on any of these Actors; Free-plan runs of the Instagram Actors are limited to 100 results each.
 
 ## Why this instead of the YouTube Data API or the Instagram Graph API
 
@@ -269,21 +281,23 @@ With the Actors you need one Apify token, and you pay per result.
 ## Limits
 
 - **Public data only.** Neither Actor signs in. Private Instagram accounts, stories, tagged posts, follower lists and profile search are not available.
-- **Instagram hashtags and keywords** return curated top posts, about 60 per term; locations return about 70 posts. Comments come newest first, without replies.
+- **Instagram hashtags and keywords** return curated top posts, about 60 per term; locations return about 70 posts. Comments come newest first unless you ask for the most-liked (`commentsSort: "top"`), and without replies.
 - **Instagram plays and views** are read logged-out and can differ from what the creator sees in Insights. Don't use them to verify creator payouts.
 - **YouTube filters** (`dateFilter`, `sortBy`) apply to search terms only. Dislikes are estimates. This repo doesn't cover subtitles.
-- Rows with an `error` field (for example a channel that doesn't exist) describe inputs that returned nothing.
+- **Inputs that return nothing** (a YouTube channel that doesn't exist, a search with no results, a private or deleted video) are listed in the run's `ERRORS` record and status message and aren't charged. Set `errorRowsInDataset: true` to also get them as dataset rows with an `error` field, each billed as one result. Instagram runs list what happened to every input (`ok`, `private`, `not_found` …) in a `RUN_REPORT` record.
 
 ## More
 
 - YouTube dislike counts in bulk to CSV: [youtube-dislike-count-bulk](https://github.com/ArpitGandhi1934/youtube-dislike-count-bulk)
 - Instagram Reels to text in bulk: [instagram-reels-transcript-bulk](https://github.com/ArpitGandhi1934/instagram-reels-transcript-bulk)
+- Instagram comments to Excel or CSV with like, keyword and date filters: [instagram-comments-export](https://github.com/ArpitGandhi1934/instagram-comments-export) ([Instagram Comments Scraper][store-igc]). Shorts only: [YouTube Shorts Scraper][store-shorts]
+- Both Actors inside Claude, ChatGPT, Cursor or VS Code through pinned Apify MCP servers: [yugenox-mcp](https://github.com/ArpitGandhi1934/yugenox-mcp)
 - Guides on [yugenox-data.vercel.app](https://yugenox-data.vercel.app): [YouTube Data API alternative](https://yugenox-data.vercel.app/youtube/data-api-alternative), [YouTube scrapers compared](https://yugenox-data.vercel.app/compare/youtube-scrapers), [YouTube comments](https://yugenox-data.vercel.app/youtube/comments-scraper), [channel videos to CSV](https://yugenox-data.vercel.app/youtube/channel-videos-to-csv), [Instagram without login](https://yugenox-data.vercel.app/instagram/scraper-no-login), [influencer vetting](https://yugenox-data.vercel.app/instagram/influencer-vetting), [location posts](https://yugenox-data.vercel.app/instagram/location-posts), [reels by audio](https://yugenox-data.vercel.app/instagram/reels-by-audio), [use in ChatGPT, Claude and Cursor](https://yugenox-data.vercel.app/ai/use-in-chatgpt-claude-cursor), [pricing calculator](https://yugenox-data.vercel.app/pricing-calculator)
 - The Actors, with input forms, output schemas, reviews and their API pages (clients, OpenAPI, MCP for AI agents): [YouTube Scraper][store-yt] ([API][api-yt]) and [Instagram Scraper][store-ig] ([API][api-ig])
 
 ## Samples, testing and legal
 
-- Every input in [`inputs/`](inputs) was run against the live Actors on 2026-09-26 (YouTube build 0.1.11, Instagram build 0.2.7), each one through one of the four runners, and every runner against both Actors. Input keys were checked against both input schemas on the same day. See [samples/README.md](samples/README.md) for what's in each sample and how private individuals' details were pseudonymized before committing.
+- Every input in [`inputs/`](inputs) was run against the live Actors on 2026-09-26 (YouTube build 0.1.11, Instagram build 0.2.7), each one through one of the four runners, and every runner against both Actors. Input keys were checked against both input schemas on the same day, and again on 2026-10-06 against the live builds (YouTube 0.1.14, Instagram 0.2.15), when the prices were re-checked too. See [samples/README.md](samples/README.md) for what's in each sample and how private individuals' details were pseudonymized before committing.
 - Not affiliated with YouTube, Google, Instagram or Meta. YouTube is a trademark of Google LLC; Instagram is a trademark of Meta Platforms, Inc.
 - Dislike estimates: [Return YouTube Dislike](https://returnyoutubedislike.com).
 - Results can include personal data (usernames, comments). Follow GDPR, PIPEDA, CCPA and the platforms' terms when you store or publish them. See [Is web scraping legal?][legal].
@@ -294,6 +308,8 @@ With the Actors you need one Apify token, and you pay per result.
 [store-ig]: https://apify.com/yugenox/instagram-scraper
 [api-yt]: https://apify.com/yugenox/youtube-scraper/api
 [api-ig]: https://apify.com/yugenox/instagram-scraper/api
+[store-shorts]: https://apify.com/yugenox/youtube-shorts-scraper
+[store-igc]: https://apify.com/yugenox/instagram-comments-scraper
 [badge-yt]: https://apify.com/actor-badge?actor=yugenox/youtube-scraper
 [badge-ig]: https://apify.com/actor-badge?actor=yugenox/instagram-scraper
 [signup]: https://console.apify.com/sign-up
